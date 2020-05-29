@@ -35,15 +35,21 @@ GO: Start the individuals walk around the world and interact.
 ### Sliders
 
 total-iterations-num: Maximum number of iterations (in ticks) for the simulation.
+
 initial-positive-num: Number of individuals infected.
+
 initial-negative-num: Number of healthy individuals.
+
 minimum-separation: Minimum distance recommendation for avoid close contacts.
+
 disobedience-probability: Probability of not meeting the minimum distance recommendation.
+
 detection-fault-probability: Probability of failure in detection and timely isolation.
 
 ### Switches
 
 avoid-close-contact: Enable/disable this strategie.
+
 detection-and-isolation: Enable/disable this strategie.
 
 ### Strategies
@@ -70,6 +76,7 @@ Fork the code to make the model more complicated, detailed, or accurate.
 ## RELATED MODELS
 
 - NetLogo epiDEM Basic
+
 - NetLogo epiDEM Travel and Control
 
 Specifically, to write this code, I took as a starting point the PD N-Person Iterated model code by U. Wilensky:
