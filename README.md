@@ -72,7 +72,7 @@ Fork the code to make the model more complicated, detailed, or accurate.
 - NetLogo epiDEM Basic
 - NetLogo epiDEM Travel and Control
 
-Especifically, to write this code, I took as a starting point the PD N-Person Iterated model code by U. Wilensky:
+Specifically, to write this code, I took as a starting point the PD N-Person Iterated model code by U. Wilensky:
 
 * Wilensky, U. (2002). NetLogo PD N-Person Iterated model. http://ccl.northwestern.edu/netlogo/models/PDN-PersonIterated. Center for Connected Learning and Computer-Based Modeling, Northwestern University, Evanston, IL.
 
