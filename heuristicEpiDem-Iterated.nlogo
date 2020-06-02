@@ -358,7 +358,7 @@ PLOT
 16
 1284
 497
-Epidemy evolution
+Epidemic evolution
 Time [ticks]
 Total positive cases
 0.0
