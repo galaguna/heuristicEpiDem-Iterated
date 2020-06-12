@@ -8,9 +8,13 @@ The basis of the proposed model is the possibility of representing a population 
 During the execution of the model, healthy individuals are displayed in green, infected individuals in red, isolated individuals in cyan, immunized individuals in yellow and, finally, dead individuals in brown.
 
 Individuals may be alive or die from the disease if they do not get through the critical phase of the disease. If an individual is alive, whether it is healthy or sick, and it does not have an encounter with someone else, it has the possibility of moving freely to seek personal encounters, as long as the individual is not isolated. When an individual moves freely, the following rules are followed:
+
 I. The Individual moves randomly to find a partner to meet. As long as no partner is associated, the individual is free to meet. 
+
 II. Once the Individual is near a potential partner, it checks that the potential partner is not isolated or dead. If the possible interlocutor is available, then contact is established with it and becomes the interlocutor in turn. 
+
 III. Once a meeting has been established, in order to minimize the likelihood of infection, partners may or may not consider following the recommendation to maintain a minimum distance.
+
 IV. Once a couple of individuals have made contact and interacted, they proceed to end the encounter and continue to seek new encounters by moving randomly.
 
 Meanwhile, sick individuals can infect healthy ones according to the probability function that is found in terms of the inverse of 2 elevated to the distance between the partners.
@@ -48,6 +52,7 @@ detection-and-isolation: Enable/disable this strategie.
 Regarding the measures to contain the spread of the epidemic, this model allow us to evaluates the performance of two strategies:
 
 A) Avoid close contacts. The minimum separation is recommended to be maintained in encounters between individuals in order to minimize the risk of possible contagion. In order to introduce the factor of free will in the adoption of this measure, the disobedience-probability parameter incorporated.
+
 B) Timely identification of newly infected and immediate isolation. A sanitary filter is implemented to detect the first symptoms of the disease and refer the infected person to a containment or isolation area in a timely manner. In order to introduce voluntary avoidance or error into these diagnoses, the detection-fault-probability parameter is introduced.
 
 
@@ -66,6 +71,7 @@ Fork the code to make the model more complicated, detailed, or accurate.
 ## RELATED MODELS
 
 - epiDEM Basic
+
 - epiDEM Travel and Control
 
 Specifically, to write this code, I took as a starting point the PD N-Person Iterated model code by U. Wilensky:
