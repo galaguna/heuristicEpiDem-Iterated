@@ -125,7 +125,7 @@ to partner-up
   if (not partnered?) [                                          ;If the individual does not have an encounter
     rt (random-float 90 - random-float 90) fd 1                  ;The individual moves randomly
     set partner one-of (turtles-at -1 0) with [ not partnered? ] ;The individual is looking for a close partner
-    if (partner != nobody) [              ;Si hay alguien cerca:
+    if (partner != nobody) [                                     ;If there's anyone around:
       let partner-alive? [alive?] of partner 
       let partner-isolated? [isolated?] of partner
       if (partner-alive? and not partner-isolated?) [
